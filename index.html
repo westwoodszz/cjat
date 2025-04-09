@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>моя люпимая</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+    
+    <main class="container">
+        <section class="hero">
+            <h1 class="title-glow">самой лучшей девочке на планете<span class="heart-emoji">💖</span></h1>
+            
+            <div class="message-card animate-pop">
+                <p class="typing-animation" id="mainMessage"></p>
+            </div>
+
+            <div class="button-grid">
+                <button class="neumorphic-btn" data-action="memories">
+                    <span class="btn-icon">📸</span>
+                    красивая девочка (не открывать)
+                </button>
+                <button class="neumorphic-btn" data-action="secret">
+                    <span class="btn-icon">🔒</span>
+                    между строк
+                </button>
+                <button class="neumorphic-btn" data-action="surprise">
+                    <span class="btn-icon">🎁</span>
+                    поймай сердечки
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Галерея из 4 фото -->
+    <div class="photo-gallery">
+        <div class="photo-card photo-left">
+            <img src="photo1.jpg" alt="Моя любимая 1">
+            <button class="close-photo">&times;</button>
+        </div>
+        <div class="photo-card photo-right">
+            <img src="photo2.jpg" alt="Моя любимая 2">
+            <button class="close-photo">&times;</button>
+        </div>
+        <div class="photo-card photo-top">
+            <img src="photo3.jpg" alt="Моя любимая 3">
+            <button class="close-photo">&times;</button>
+        </div>
+        <div class="photo-card photo-bottom">
+            <img src="photo4.jpg" alt="Моя любимая 4">
+            <button class="close-photo">&times;</button>
+        </div>
+    </div>
+
+    <!-- Контейнер для сердечек -->
+    <div class="floating-hearts" id="heartsContainer"></div>
+    
+    <!-- Секретное сообщение -->
+    <div class="secret-modal" id="secretModal">
+        <div class="modal-content">
+            <h3>между строк</h3>
+            <p class="secret-text" id="secretText"></p>
+            <button class="modal-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
